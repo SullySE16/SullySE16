@@ -1,5 +1,5 @@
-- 👋 Hi, I’m @SullySE16
-- 👀 I’m interested in sports, technology, hip-hop and the most random topics you can probably think of.
+- 👋 Hi, I’m Joe
+- 👀 I’m interested in sports, technology, music and the most random topics you can probably think of.
 - 🌱 I’m currently learning Python
 - 💞️ I’m looking to collaborate on Python projects
 - 📫 How to reach me josephgggsullivan@gmail.com
