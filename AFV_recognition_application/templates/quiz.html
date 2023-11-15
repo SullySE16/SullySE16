@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Multiple Choice Quiz</title>
+</head>
+<body>
+    <h1>Question: {{ question.question }}</h1>
+    {% if question.image %}
+        <img src="{{ url_for('static', filename=question.image) }}" alt="Question Image" style="max-width: 300px;">
+    {% endif %}
+    <form action="/" method="POST">
+        {% for choice in question.choices %}
+            <input type="radio" name="choice" value="{{ choice }}"> {{ choice }}<br>
+        {% endfor %}
+        {% if is_correct != None %}
+            {% if is_correct %}
+                <p>Correct!</p>
+            {% else %}
+                <p>Incorrect!</p>
+            {% endif %}
+        {% endif %}
+        <input type="submit" value="Next">
+    </form>
+</body>
+</html>
+
